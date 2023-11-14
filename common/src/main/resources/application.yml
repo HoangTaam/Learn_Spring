@@ -1,2 +1,7 @@
 server:
   port: 8001
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:admin@cluster1.fq1lj9v.mongodb.net/?retryWrites=true&w=majority
+      database: user_service
