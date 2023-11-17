@@ -14,10 +14,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping(value = "/register-user")
-    public GeneralApiResponse<User> registerUser(@RequestBody User user){
-        return new GeneralApiResponse<>(new User(user.getUserId(), user.getUserName(), user.getUserPassWord()));
-    }
     @PostMapping(value = "/user-login")
     public GeneralApiResponse<User> userLogin(@RequestParam(name = "userName") String userName,
                                               @RequestParam(name = "userPassWord") String userPassWord){
