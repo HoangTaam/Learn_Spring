@@ -1,10 +1,9 @@
-package com.uit.user.controllers;
+package com.uit.user.controller;
 
 import com.uit.common.dto.GeneralApiResponse;
-import com.uit.common.models.User;
-import com.uit.user.services.UserService;
+import com.uit.common.model.User;
+import com.uit.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

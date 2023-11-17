@@ -1,6 +1,6 @@
-package com.uit.user.services;
+package com.uit.user.service;
 
-import com.uit.common.models.User;
+import com.uit.common.model.User;
 import com.uit.user.repository.AuthenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
