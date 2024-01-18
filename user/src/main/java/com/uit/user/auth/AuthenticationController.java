@@ -1,5 +1,8 @@
-package com.uit.common.auth;
+package com.uit.user.auth;
 
+import com.uit.common.auth.AuthenticationRequest;
+import com.uit.common.auth.AuthenticationResponse;
+import com.uit.common.auth.RegisterRequest;
 import com.uit.common.dto.GeneralApiResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

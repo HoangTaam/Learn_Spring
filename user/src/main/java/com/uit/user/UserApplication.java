@@ -2,11 +2,13 @@ package com.uit.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.uit.common")
 public class UserApplication {
     public static void main(String[] args) {
-        SpringApplication.run(UserApplication.class,args);
+        ConfigurableApplicationContext context = SpringApplication.run(UserApplication.class,args);
+        System.out.println("Security config: " + context.getBean("securityFilterChain"));
     }
 }
