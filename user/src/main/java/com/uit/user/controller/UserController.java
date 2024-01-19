@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(path = "/user")
 public class UserController {
 
-    @Autowired
-    private UserService userService;
+//    @Autowired
+//    private UserService userService;
 
     @PostMapping(value = "/user-login")
     public GeneralApiResponse<String> userLogin(@RequestParam(name = "userName") String userName,

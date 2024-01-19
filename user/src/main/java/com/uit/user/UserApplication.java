@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 
-@SpringBootApplication(scanBasePackages = "com.uit.common")
+@SpringBootApplication(scanBasePackages = {"com.uit"})
 public class UserApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(UserApplication.class,args);
